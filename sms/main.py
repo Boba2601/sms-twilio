@@ -1,10 +1,9 @@
 from twilio.rest import Client
 
-
 def twilio_sms(text = ''):
     try:
-        account_sid = ''
-        auth_token = ''
+        account_sid = 'YOUR SID'
+        auth_token = 'YOUR TOKEN'
         client = Client(account_sid, auth_token)
 
         message = client.messages.create(
